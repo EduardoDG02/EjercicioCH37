@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <fieldset><!--organiza por grupos los campos del formulario-->
+        <form action="">
+            <div class="datos"><!--para crear un div con una clase de forma atajo es .datos,tab-->
+                <h3>Datos personales</h3>
+                <label for="nombre"><strong>Nombre completo</strong></label>
+                <input type="text" id="nombre">
+                <br>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad">
+
+                <label for="edad2">Edad 2</label>
+                <input type="date" id="edad2">
+                <br>
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" required="1" placeholder="Ingresa email"><!--placeholder es para poner texto dentro de la cajita-->
+                <br>
+                <label for="telefono">Telefono</label>
+                <input type="telefono" id="telefono">                
+            </div>
+            <div class="documentos">
+                <h3>Documentos</h3>
+                <label for="ine">INE</label>
+                <input type="file" id="ine">
+                <br>
+                <label for="comprobante">Comprobante de domicilio</label>
+                <input type="file" id="comprobante">
+            </div>
+            <div class="intereses">
+                <h3>Intereses de la clase</h3>
+                <select name="#" id="#">
+                    <option value="#">Java</option>
+                    <option value="#">Sprint</option>
+                    <option value="#">mysql</option>
+                    <option value="#">react</option>                    
+                </select>
+                <br>
+                <label for="leer"><!--con checkbox, el input va adentro del label-->
+                    <input type="checkbox">Leer
+                </label>
+            </div>
+            
+</body>
+</html>
